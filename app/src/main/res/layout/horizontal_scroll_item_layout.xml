@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/slider_background" android:layout_width="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="3dp"
+    android:layout_height="match_parent">
+   <ImageView
+       android:layout_width="80dp"
+       android:layout_height="90dp"
+       android:id="@+id/horizontal_scroll_image"
+       android:scaleType="fitCenter"
+       android:layout_margin="3dp"
+       android:layout_centerHorizontal="true"
+
+       android:src="@drawable/place"/>
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/horizontal_scroll_t1"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+       android:layout_marginLeft="15dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#000000"
+        android:layout_below="@id/horizontal_scroll_image"
+        android:text="Paris Flag"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textColor="#00ff00"
+        android:id="@+id/horizontal_scroll_t2"
+        android:text="@string/app_name"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/horizontal_scroll_t1"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Rs.5999"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:layout_below="@id/horizontal_scroll_t2"
+        android:id="@+id/horizontal_scroll_productPrice"
+        android:gravity="center_horizontal" />
+</RelativeLayout>

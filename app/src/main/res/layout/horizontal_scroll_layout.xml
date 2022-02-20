@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slider_background"
+    android:layout_margin="8dp"
+    android:id="@+id/container"
+    android:elevation="3dp"
+
+    android:paddingBottom="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:text="Deals of the day!"
+        android:id="@+id/horizontal_scroll_layout_title"
+        android:layout_margin="15dp"
+
+        android:textSize="16sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all"
+        android:layout_margin="15dp"
+        android:id="@+id/viewalll"
+        android:background="@color/colorAccent"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewalll"
+        android:id="@+id/horizontal_scroll_layout_recyclerView"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

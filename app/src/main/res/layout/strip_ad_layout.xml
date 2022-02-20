@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/strip_ad_container"
+    android:elevation="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/strip_ad_image"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/placeholderbanner"/>
+
+</RelativeLayout>

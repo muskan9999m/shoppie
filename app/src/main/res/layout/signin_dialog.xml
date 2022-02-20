@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signin_image"
+        android:src="@drawable/signout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_image"
+        android:id="@+id/tv"
+        android:textColor="#000000"
+        android:text="Just few steps away from cart."
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:weightSum="2"
+       android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/signinbutton"
+            android:text="Sign in"
+            android:stateListAnimator="@null"
+            android:padding="3dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/signupbutton"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:text="Sign up"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+/>    </LinearLayout>
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="15dp"
+        android:background="@color/back" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="1dp"
+        android:layout_below="@id/tv"
+        android:layout_height="57dp"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/back" />
+
+</RelativeLayout>

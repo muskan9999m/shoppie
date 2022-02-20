@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/containerr"
+    android:background="@drawable/slider_background"
+    android:elevation="3dp"
+
+    android:layout_margin="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_layout_title"
+        android:text="deals of the day!"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_viewall"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="View all"
+        android:background="@color/colorAccent"
+
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:columnCount="2"
+        android:layout_below="@id/grid_viewall"
+
+        android:id="@+id/grid_layout">
+        <include layout="@layout/horizontal_scroll_item_layout" android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <include layout="@layout/horizontal_scroll_item_layout" android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <include layout="@layout/horizontal_scroll_item_layout" android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <include layout="@layout/horizontal_scroll_item_layout" android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/grid_viewall"
+
+
+        android:layout_marginTop="186dp"
+        android:background="?android:attr/listDivider" />
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="1dp"
+        android:layout_height="380dp"
+        android:layout_column="0"
+        android:layout_below="@id/grid_viewall"
+
+        android:layout_row="0"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/listDivider" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:id="@+id/tvquantity"
+        android:text="Quantity"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/tvquantity"
+        android:layout_margin="16dp"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:id="@+id/quantityNo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityNo"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/cancelbutton"
+            android:text="Cancel"
+            android:stateListAnimator="@null"
+            android:padding="3dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/okbutton"
+            android:background="@color/white"
+            android:textColor="@color/colorAccent"
+            android:text="Ok"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />    </LinearLayout>
+
+
+
+</RelativeLayout>

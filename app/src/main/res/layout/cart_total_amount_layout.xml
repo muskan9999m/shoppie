@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:paddingBottom="20dp"
+    android:layout_marginTop="4dp"
+    android:background="#F8E859"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="PRICE DETAILS"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/total_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Price(2 items)"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/total_items_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider5"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Rs.49999/-"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_items"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Delivery"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/delivery_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_items_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="free"
+            android:textColor="#00ff00"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/delivery_price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider6"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Total Amount"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider6"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="Rs.49999/-"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/divider6"
+            android:layout_marginTop="40dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/saved_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="You saved Rs.999/-"
+            android:textColor="#00ff00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/rl1"
+        android:id="@+id/happyshoppingimage"
+        android:src="@drawable/happyshop"/>
+
+</RelativeLayout>

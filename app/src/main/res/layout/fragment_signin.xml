@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/cncl"
+            android:background="@drawable/cncl"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:id="@+id/im"
+            android:background="@drawable/rem"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/peach"
+            android:hint="@string/email"
+            android:id="@+id/e1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/im"
+            android:layout_marginTop="100dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/peach"
+            android:hint="@string/enter_password"
+            android:id="@+id/e2"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/e1"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/forget"
+            android:textSize="15sp"
+            android:text="@string/forget_password"
+            android:layout_below="@id/e2"
+            android:layout_marginTop="15dp"
+
+            android:textColor="@color/colorAccent"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/forget"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forget"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:enabled="false"
+            android:textSize="21sp"
+
+            android:id="@+id/signin"
+            android:background="#50ff0000"
+            android:text="@string/sign_in"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin"
+            android:text="@string/not_an_existing_use_sign_up"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:id="@+id/tv1"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

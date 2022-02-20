@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp" android:layout_marginBottom="4dp"
+    android:background="#ffffff"
+    android:elevation="3dp">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/productImage"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/perfume"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:id="@+id/productTitle"
+        android:textSize="21sp"
+        android:text="Park Avenue"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_margin="16dp"
+        android:tint="#00ff00"
+        android:id="@+id/order_indicator"
+        android:layout_below="@id/productTitle"
+        android:src="@drawable/default_dot"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_indicator"
+        android:textSize="12sp"
+        android:id="@+id/order_delivered_date"
+        android:layout_below="@id/productTitle"
+        android:layout_marginTop="10dp"
+        android:text="Delivered on Monday, 15th Jan 2020"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/order_indicator"
+        android:text="Your ratings"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/ratingdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/productImage"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:id="@+id/rate_now_container"
+        android:layout_below="@id/ratingdivider"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:id="@+id/star1"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/star2"
+            android:layout_weight="1"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/star3"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:id="@+id/star4"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_weight="1"
+            android:id="@+id/star5"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

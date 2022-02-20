@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shoppie">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shoppie"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/shoppie"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.shoppie.otpVerificationActivity"></activity>
+        <activity
+            android:name="com.example.shoppie.viewAllActivity"
+            android:theme="@style/AppThemes"></activity>
+        <activity
+            android:name="com.example.shoppie.myAdressesActivity"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name="com.example.shoppie.addAdressActivity"
+            android:theme="@style/AppThemes" />
+        <activity
+            android:name="com.example.shoppie.DeliveryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.shoppie.orderDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.shoppie.productDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.shoppie.categoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.shoppie.MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.shoppie.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shoppie.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/paytmThemes"
+            tools:replace="android:theme" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

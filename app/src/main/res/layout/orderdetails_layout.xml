@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/perfume"
+        android:id="@+id/productimage"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engaged Deo Spray"
+        android:textColor="#000000"
+        android:layout_margin="16dp"
+        android:textSize="21sp"
+        android:id="@+id/producttitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/producttitle"
+        android:id="@+id/productprice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:text="Rs.5999/-"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/productimage"
+        android:layout_below="@id/productprice"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Qty : 1"
+        android:textColor="#000000"
+        android:backgroundTint="#000000"
+        android:padding="3dp"
+        android:background="@drawable/border_background"
+        />
+
+
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/productimage"
+        android:background="?android:attr/listDivider" />
+    <ImageView
+        android:id="@+id/ordered_indicator"
+        android:layout_width="15dp"
+        android:layout_below="@id/divider8"
+        android:layout_marginLeft="16dp"
+        android:layout_height="15dp"
+        android:tint="@color/back"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/orderpacked_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/divider8"
+        android:progressBackgroundTint="@color/back"
+        android:progress="0"
+        android:layout_marginTop="5dp"
+        android:progressTint="#00ff00"
+        android:layout_marginLeft="25dp"
+        android:rotation="90"
+        android:transformPivotX="0dp" />
+    <ImageView
+        android:id="@+id/packed_indicator"
+        android:layout_width="15dp"
+        android:tint="@color/back"
+        android:layout_below="@id/ordered_indicator"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/selected_dot" />
+    <ProgressBar
+        android:id="@+id/packed_shipping_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/ordered_indicator"
+        android:progress="0"
+        android:progressTint="#00ff00"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="49dp"
+        android:progressBackgroundTint="@color/back"
+        android:rotation="90"
+        android:transformPivotX="0dp" />
+    <ImageView
+        android:id="@+id/shipping_indicator"
+        android:layout_width="15dp"
+        android:layout_below="@id/packed_indicator"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:tint="@color/back"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/selected_dot" />
+    <ProgressBar
+        android:id="@+id/shipping_delivered_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/packed_indicator"
+        android:progress="0"
+        android:progressTint="#00ff00"
+        android:layout_marginLeft="25dp"
+        android:progressBackgroundTint="@color/back"
+        android:layout_marginTop="49dp"
+        android:rotation="90"
+        android:transformPivotX="0dp" />
+    <ImageView
+        android:id="@+id/delivered_indicator"
+        android:layout_width="15dp"
+        android:layout_below="@id/shipping_indicator"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:tint="@color/back"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/selected_dot" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordered"
+        android:id="@+id/tv_ordered"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/divider8"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon,12 Dec 2020 18:00 AM."
+        android:id="@+id/ordered_date"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_ordered"
+        android:layout_below="@id/divider8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordered"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/ordered_body"
+        android:text="Your order has been placed."/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Packed"
+        android:id="@+id/tv_packed"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/divider8"
+        android:textColor="#000000"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/packed_date"
+        android:layout_height="wrap_content"
+        android:text="Mon,12 Dec 2020 18:00 AM."
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/tv_ordered"
+        android:layout_below="@id/divider8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordered"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/packed_body"
+        android:text="Your order has been packed."/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipped"
+        android:id="@+id/tv_shipped"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/divider8"
+        android:textColor="#000000"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/shipped_date"
+        android:layout_height="wrap_content"
+        android:text="Mon,12 Dec 2020 18:00 AM."
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/tv_ordered"
+        android:layout_below="@id/divider8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordered"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:id="@+id/shipped_body"
+        android:text="Your order has been shipped."/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivered"
+        android:id="@+id/tv_delivered"
+        android:layout_toRightOf="@id/ordered_indicator"
+        android:layout_below="@id/divider8"
+        android:textColor="#000000"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delivered_date"
+        android:text="Mon,12 Dec 2020 18:00 AM."
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="165dp"
+        android:layout_toRightOf="@id/tv_ordered"
+        android:layout_below="@id/divider8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordered"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="165dp"
+        android:id="@+id/delivered_body"
+        android:text="Your order has been delivered."/>
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/divider8"
+        android:layout_marginTop="220dp"
+        android:background="?android:attr/listDivider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider9"
+        android:layout_marginLeft="16dp"
+        android:textColor="#000000"
+        android:text="Your Ratings"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:id="@+id/rate_now_container"
+        android:layout_below="@id/divider9"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:id="@+id/star1"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/star2"
+            android:layout_weight="1"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/star3"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:id="@+id/star4"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:tint="#BDBABA"
+            android:src="@drawable/star"
+            android:layout_weight="1"
+            android:id="@+id/star5"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

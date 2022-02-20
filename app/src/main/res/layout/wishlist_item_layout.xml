@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    android:layout_marginBottom="2dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/perfume"
+        android:id="@+id/Productimage"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engaged Deo Spray"
+        android:layout_toRightOf="@id/Productimage"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Producttitle"
+        android:textSize="21sp"
+        android:textColor="#000000"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/coupon_icon"
+        android:tint="#8000ff"
+        android:src="@drawable/tag"
+        android:layout_toRightOf="@id/Productimage"
+        android:layout_below="@id/Producttitle"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="free coupons"
+        android:layout_below="@id/Producttitle"
+        android:layout_toRightOf="@id/coupon_icon"
+        android:id="@+id/freecoupontextview"
+        android:textColor="#8000ff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"/>
+    <LinearLayout
+        android:background="@drawable/slider_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ratingll"
+        android:backgroundTint="#14B814"
+        android:padding="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/coupon_icon"
+        android:layout_toRightOf="@id/Productimage"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_product_rating_miniview"
+            android:textColor="#ffffff"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold"
+            android:text="4.5"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:tint="#ffffff"
+            android:src="@drawable/star"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2189 ratings)"
+        android:layout_toRightOf="@id/ratingll"
+        android:layout_below="@id/coupon_icon"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="9dp"
+        android:id="@+id/total_ratings"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingll"
+        android:text="Rs.9999/-"
+        android:layout_toRightOf="@id/Productimage"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/Productprice"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Productprice"
+        android:layout_below="@id/ratingll"
+        android:text="Rs.21999/-"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/Cuttedprice"/>
+
+    <View
+        android:id="@+id/pricecut"
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/ratingll"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/Productprice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cuttedprice"
+        android:text="Cash on delivery available."
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/paymentMethod"
+        android:layout_toRightOf="@id/Productimage"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/delete"
+        android:padding="5dp"
+        android:id="@+id/delete_button"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
